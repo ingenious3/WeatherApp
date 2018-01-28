@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="com.example.ishant.weatherapp.view.MainActivity">
+
+    <TextView
+        android:id="@+id/currentTempTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="47.3 C"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+       />
+
+    <TextView
+        android:id="@+id/lowTempTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low temp : "
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/currentTempTextview"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/highTempTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High temp : "
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/lowTempTextview"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        />
+    <TextView
+        android:id="@+id/pressureTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure : "
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/highTempTextview"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/humidityTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity : "
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/pressureTextview"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/postalCodeTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postal Code : "
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/humidityTextview"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <EditText
+        android:id="@+id/zipcode"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/postalCodeTextview"
+        android:layout_below="@id/humidityTextview"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:padding="4dp"
+        android:text="00000"/>
+
+
+
+</RelativeLayout>
